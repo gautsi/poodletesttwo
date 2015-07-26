@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import numpy as np
 
 
 def test_func():
@@ -8,10 +9,13 @@ def test_func():
     For example,
 
     >>> test_func()
-    'hello'
+    'hello 2.0'
 
     >>> 1 + 2
     3
 
+    >>> np.sqrt(4)
+    2.0
+
     """
-    return "hello"
+    return "hello {}".format(np.sqrt(4))

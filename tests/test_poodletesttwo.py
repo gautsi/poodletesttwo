@@ -19,7 +19,7 @@ class TestPoodletesttwo(unittest.TestCase):
         pass
 
     def test_something(self):
-        pass
+        assert poodletesttwo.test_func() == "hello 2.0"
 
     def tearDown(self):
         pass
