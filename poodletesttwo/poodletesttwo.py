@@ -30,4 +30,4 @@ def test_func():
     del red
     a = tm.time()
     del a
-    return "hello {} {}".format(np.sqrt(4), df[0][0])
+    return "hello {0} {1}".format(np.sqrt(4), df[0][0])
