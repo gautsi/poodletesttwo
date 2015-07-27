@@ -12,7 +12,8 @@ with open('README.rst') as readme_file:
     readme = readme_file.read()
 
 requirements = [
-    'numpy'
+    'numpy==1.9.2',
+    'pandas==0.16.2'
 ]
 
 test_requirements = [

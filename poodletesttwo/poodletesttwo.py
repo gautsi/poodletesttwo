@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import numpy as np
+import pandas as pd
 
 
 def test_func():
@@ -9,7 +10,7 @@ def test_func():
     For example,
 
     >>> test_func()
-    'hello 2.0'
+    'hello 2.0 0'
 
     >>> 1 + 2
     3
@@ -18,4 +19,5 @@ def test_func():
     2.0
 
     """
-    return "hello {}".format(np.sqrt(4))
+    df = pd.DataFrame([0])
+    return "hello {} {}".format(np.sqrt(4), df[0][0])
